@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: abe9605e54e30684c86b1e13d520212c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MinBounds: {instanceID: 0}
+  - MaxBounds: {instanceID: 0}
+  - BallPrefab: {instanceID: 0}
+  - _lossScreen: {instanceID: 0}
+  - _winScreen: {instanceID: 0}
+  - _ballText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
