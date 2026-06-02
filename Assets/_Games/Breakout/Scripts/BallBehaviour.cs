@@ -12,9 +12,20 @@ namespace Games.Breakout {
             if (!GameManager.Instance.GameRunning) return;
 
             if (CollidesWithGameObject(PaddleController.Instance.gameObject)) {
-                Velocity.y = Mathf.Abs(Velocity.y);  // always bounce up off paddle
+                // Preserve total speed across paddle bounce. The original
+                // formula (Velocity.x = paddleToBall.x * MaxHorizontalVelocity)
+                // increased the ball's speed every time it hit the paddle edge,
+                // making the game accelerate uncontrollably. Compute the new
+                // direction from the paddle-relative hit point, then re-scale
+                // to the speed the ball had before the bounce.
+                float speed = Velocity.magnitude;
                 Vector3 paddleToBall = transform.position - PaddleController.Instance.gameObject.transform.position;
-                Velocity.x = paddleToBall.x * MaxHorizontalVelocity;
+                Vector3 newDir = new Vector3(
+                    paddleToBall.x * MaxHorizontalVelocity,
+                    Mathf.Abs(Velocity.y),
+                    0
+                ).normalized;
+                Velocity = newDir * speed;
             }
 
             for (int i = 0; i < GameManager.Instance.Bricks.Length; i++) {
