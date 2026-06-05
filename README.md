@@ -19,7 +19,7 @@ that I followed a multi-game semester through to completion.
 | Game | Status | Note |
 |---|---|---|
 | Breakout | ✅ landed | Hand-rolled AABB, paddle-relative bounce; polish pass fixed precedence bug + moved physics to FixedUpdate |
-| Snake | pending | — |
+| Pied Piper | 🚧 in progress | Medieval take on Snake — chain of children follows your path; adding city guards to dodge + collect-N-children quota before exit activates |
 | Platformer | pending | — |
 | FPS | pending | — |
 | DOOM Clone | pending | — |
@@ -40,7 +40,8 @@ Assets/
 │   │   ├── Scripts/{BallBehaviour, GameManager, PaddleController}.cs
 │   │   ├── Prefabs/
 │   │   └── README.md
-│   └── (Snake, Platformer, FPS, DoomClone — pending)
+│   ├── PiedPiper/                  ← Pied Piper variant of Snake (in progress)
+│   └── (Platformer, FPS, DoomClone — pending)
 ├── _Shared/          ← MainMenu + SceneLoader (pending)
 ├── Settings/         ← URP, input
 └── TextMesh Pro/
@@ -58,6 +59,7 @@ Each game's folder has its own README covering: original design choices,
 what the polish pass changed, controls, and how to open the scene.
 
 - [Breakout](Assets/_Games/Breakout/README.md)
+- [Pied Piper](Assets/_Games/PiedPiper/README.md)
 
 ## Stack
 
