@@ -19,8 +19,8 @@ that I followed a multi-game semester through to completion.
 | Game | Status | Note |
 |---|---|---|
 | Breakout | ✅ landed | Hand-rolled AABB, paddle-relative bounce; polish pass fixed precedence bug + moved physics to FixedUpdate |
-| Pied Piper | 🚧 in progress | Medieval take on Snake — chain of children follows your path; adding city guards to dodge + collect-N-children quota before exit activates |
-| Platformer | pending | — |
+| Pied Piper | ✅ landed | Medieval take on Snake — quota of children → exit gate activates; chain catches up if you stop; scatter-on-loss. Guards + extra levels deferred. |
+| Platformer | 🚧 in progress | 2D side-scroller, 3 levels (LevelOne → LevelTwo → Final), melon collectibles, enemies + lives. Polish fixed tag-inversion, off-by-one lives, wall-jump exploit, multi-jump bug. |
 | FPS | pending | — |
 | DOOM Clone | pending | — |
 
@@ -40,8 +40,9 @@ Assets/
 │   │   ├── Scripts/{BallBehaviour, GameManager, PaddleController}.cs
 │   │   ├── Prefabs/
 │   │   └── README.md
-│   ├── PiedPiper/                  ← Pied Piper variant of Snake (in progress)
-│   └── (Platformer, FPS, DoomClone — pending)
+│   ├── PiedPiper/                  ← Pied Piper variant of Snake
+│   ├── Platformer/                 ← 2D side-scroller, 3 levels
+│   └── (FPS, DoomClone — pending)
 ├── _Shared/          ← MainMenu + SceneLoader (pending)
 ├── Settings/         ← URP, input
 └── TextMesh Pro/
@@ -60,6 +61,7 @@ what the polish pass changed, controls, and how to open the scene.
 
 - [Breakout](Assets/_Games/Breakout/README.md)
 - [Pied Piper](Assets/_Games/PiedPiper/README.md)
+- [Platformer](Assets/_Games/Platformer/README.md)
 
 ## Stack
 
