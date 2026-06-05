@@ -20,8 +20,8 @@ that I followed a multi-game semester through to completion.
 |---|---|---|
 | Breakout | ✅ landed | Hand-rolled AABB, paddle-relative bounce; polish pass fixed precedence bug + moved physics to FixedUpdate |
 | Pied Piper | ✅ landed | Medieval take on Snake — quota of children → exit gate activates; chain catches up if you stop; scatter-on-loss. Guards + extra levels deferred. |
-| Platformer | 🚧 in progress | 2D side-scroller, 3 levels (LevelOne → LevelTwo → Final), melon collectibles, enemies + lives. Polish fixed tag-inversion, off-by-one lives, wall-jump exploit, multi-jump bug. |
-| FPS | pending | — |
+| Platformer | ✅ landed | 2D side-scroller, 3 levels (LevelOne → LevelTwo → Final), melon collectibles, enemies + lives. Polish fixed tag-inversion, off-by-one lives, wall-jump exploit, multi-jump bug, singleton duplicate, HUD anchoring. |
+| FPS | 🚧 in progress | First-person with key-card doors + patrolling enemies. 11 scripts, OOP inheritance + composition (Character/Weapon base classes). Polish fixed miss-fire null-ref, raycast-magnitude bug, projectile leak, deprecated velocity API. |
 | DOOM Clone | pending | — |
 
 ## Architecture
@@ -42,7 +42,8 @@ Assets/
 │   │   └── README.md
 │   ├── PiedPiper/                  ← Pied Piper variant of Snake
 │   ├── Platformer/                 ← 2D side-scroller, 3 levels
-│   └── (FPS, DoomClone — pending)
+│   ├── FPS/                        ← First-person with keys + doors + enemies
+│   └── (DoomClone — pending)
 ├── _Shared/          ← MainMenu + SceneLoader (pending)
 ├── Settings/         ← URP, input
 └── TextMesh Pro/
@@ -62,6 +63,7 @@ what the polish pass changed, controls, and how to open the scene.
 - [Breakout](Assets/_Games/Breakout/README.md)
 - [Pied Piper](Assets/_Games/PiedPiper/README.md)
 - [Platformer](Assets/_Games/Platformer/README.md)
+- [FPS](Assets/_Games/FPS/README.md)
 
 ## Stack
 
