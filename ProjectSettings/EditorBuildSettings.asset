@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Shared/Scenes/MainMenu.unity
+    guid: 1213ea876f25691458dd8ebe7abd0fbe
+  - enabled: 1
+    path: Assets/_Games/Breakout/Scenes/Breakout.unity
+    guid: b86481ec96bd9834394bd6ca436a47a9
+  - enabled: 1
+    path: Assets/_Games/PiedPiper/Scenes/PiedPiper.unity
+    guid: 969ea3d8b1c41204d97beb3026f3e570
+  - enabled: 1
     path: Assets/_Games/Platformer/Scenes/LevelOne.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -14,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Games/Platformer/Scenes/Final.unity
     guid: 4178a86c3b82c814dabfaa59c3517af0
+  - enabled: 1
+    path: Assets/_Games/FPS/Scenes/FPS.unity
+    guid: e96c94a81b940914daaa7530756144a6
+  - enabled: 1
+    path: Assets/_Games/DoomClone/E1M1.unity
+    guid: bac838c12e52f60458ffbbb0dd8fd4cb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

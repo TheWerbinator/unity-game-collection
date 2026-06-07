@@ -61,4 +61,4 @@ populated by hand in the inspector.
 
 This is one game inside the `unity-game-collection` Unity project. From the
 project root, open Unity Hub → Add project → select `unity-game-collection`,
-then open `Assets/_Games/Breakout/Scenes/Main.unity`.
+then open `Assets/_Games/Breakout/Scenes/Breakout.unity`.
