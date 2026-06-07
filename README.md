@@ -10,9 +10,10 @@ Game dev isn't my career direction; this exists to show I can ship a
 working game loop end-to-end (input, state, collision, win/lose, UI) and
 that I followed a multi-game semester through to completion.
 
-🌐 Live build (coming after all five land): _itch.io link TBD_
+**▶ [Play in browser on itch.io](https://thewerbinator.itch.io/unity-game-collection)**
 
-✅ All five games landed. WebGL build + itch.io deploy next.
+Click the game canvas once to give it keyboard focus, then use the
+MainMenu buttons. Esc returns to the menu from any game.
 
 ## Status
 
@@ -29,8 +30,9 @@ that I followed a multi-game semester through to completion.
 One Unity project. Each game lives under `Assets/_Games/<GameName>/` with
 its own scenes, scripts, prefabs, and materials. Per-game scripts are
 wrapped in `namespace Games.<GameName>` so cross-game class collisions
-(every game has a `GameManager`) don't happen. A `MainMenu` scene + scene
-loader will land in `Assets/_Shared/` once all five games are in.
+(every game has a `GameManager`) don't happen. `Assets/_Shared/` holds the
+`MainMenu` scene and the `SceneLoader` singleton that drives menu
+transitions + the Esc-to-menu hotkey.
 
 ```
 Assets/
@@ -44,7 +46,9 @@ Assets/
 │   ├── Platformer/                 ← 2D side-scroller, 3 levels
 │   ├── FPS/                        ← First-person with keys + doors + enemies
 │   └── DoomClone/                  ← Doom homage: ProBuilder + NavMesh + Freedoom sprites
-├── _Shared/          ← MainMenu + SceneLoader (pending)
+├── _Shared/
+│   ├── Scenes/MainMenu.unity
+│   └── Scripts/SceneLoader.cs   ← singleton, drives menu transitions + Esc-to-menu
 ├── Settings/         ← URP, input
 └── TextMesh Pro/
 ```
