@@ -91,7 +91,7 @@ pedagogical goal — separate "what a character is" from "how it moves" from
 
 ## Open in Unity
 
-`Assets/_Games/FPS/Scenes/Main.unity`.
+`Assets/_Games/FPS/Scenes/FPS.unity`.
 
 ## Unity setup needed
 

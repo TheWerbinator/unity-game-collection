@@ -12,7 +12,7 @@ that I followed a multi-game semester through to completion.
 
 🌐 Live build (coming after all five land): _itch.io link TBD_
 
-🚧 Work in progress — adding games one at a time after a per-game polish pass.
+✅ All five games landed. WebGL build + itch.io deploy next.
 
 ## Status
 
@@ -21,8 +21,8 @@ that I followed a multi-game semester through to completion.
 | Breakout | ✅ landed | Hand-rolled AABB, paddle-relative bounce; polish pass fixed precedence bug + moved physics to FixedUpdate |
 | Pied Piper | ✅ landed | Medieval take on Snake — quota of children → exit gate activates; chain catches up if you stop; scatter-on-loss. Guards + extra levels deferred. |
 | Platformer | ✅ landed | 2D side-scroller, 3 levels (LevelOne → LevelTwo → Final), melon collectibles, enemies + lives. Polish fixed tag-inversion, off-by-one lives, wall-jump exploit, multi-jump bug, singleton duplicate, HUD anchoring. |
-| FPS | 🚧 in progress | First-person with key-card doors + patrolling enemies. 11 scripts, OOP inheritance + composition (Character/Weapon base classes). Polish fixed miss-fire null-ref, raycast-magnitude bug, projectile leak, deprecated velocity API. |
-| DOOM Clone | pending | — |
+| FPS | ✅ landed | First-person with key-card doors + patrolling enemies. 11 scripts, OOP inheritance + composition (Character/Weapon base classes). Polish fixed miss-fire null-ref, raycast-magnitude bug, projectile leak, deprecated velocity API. More enemies + key-HUD + raycast layer-masking deferred. |
+| DOOM Clone | ✅ landed | Doom homage — ProBuilder-built E1M1 level, NavMesh AI, billboard sprites, vertical-autoaim hitscan, Doom-style armor absorption. Assets swapped to Freedoom (GPL) + royalty-free metal. Pickups + full STBAR HUD + level progression deferred. |
 
 ## Architecture
 
@@ -43,7 +43,7 @@ Assets/
 │   ├── PiedPiper/                  ← Pied Piper variant of Snake
 │   ├── Platformer/                 ← 2D side-scroller, 3 levels
 │   ├── FPS/                        ← First-person with keys + doors + enemies
-│   └── (DoomClone — pending)
+│   └── DoomClone/                  ← Doom homage: ProBuilder + NavMesh + Freedoom sprites
 ├── _Shared/          ← MainMenu + SceneLoader (pending)
 ├── Settings/         ← URP, input
 └── TextMesh Pro/
@@ -64,6 +64,7 @@ what the polish pass changed, controls, and how to open the scene.
 - [Pied Piper](Assets/_Games/PiedPiper/README.md)
 - [Platformer](Assets/_Games/Platformer/README.md)
 - [FPS](Assets/_Games/FPS/README.md)
+- [DOOM Clone](Assets/_Games/DoomClone/README.md)
 
 ## Stack
 
